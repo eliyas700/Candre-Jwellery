@@ -1,0 +1,8 @@
+.header3>li>a {
+    padding-bottom: 20px;
+    transition: .5s ease-in-out;
+}
+
+.header3>li>a:hover {
+    border-bottom: 2px solid #2fbccc;
+}
