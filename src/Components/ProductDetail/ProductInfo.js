@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ProductInfo = ({ product }) => {
   const { name, rating, reviews, totalSell, price } = product;
   return (
-    <div>
+    <div className="py-3">
       <div>
         <h1 className=" text-3xl text-left text-accent  my-4 font-serif tracking-tight">
           {name}
@@ -13,7 +13,7 @@ const ProductInfo = ({ product }) => {
         <div className="w-72 flex justify-around">
           <div className="flex">
             <Rating
-              className=""
+              className="z-[-12]"
               initialRating={rating}
               emptySymbol={<FontAwesomeIcon icon={faStar} />}
               fullSymbol={

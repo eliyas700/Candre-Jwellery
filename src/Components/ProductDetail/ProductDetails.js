@@ -1,6 +1,7 @@
 import React from "react";
 import MagnifierImg from "./MagnifierImg";
 import ProductInfo from "./ProductInfo";
+import ProductMoreInfo from "./ProductMoreInfo";
 const product = {
   name: "SPEAR HEADS SOLITAIRE DIAMOND ENGAGEMENT RING",
   reviews: 21,
@@ -17,7 +18,10 @@ const ProductDetails = () => {
         <MagnifierImg></MagnifierImg>
         <ProductInfo product={product}></ProductInfo>
       </div>
-      <div></div>
+      <div>
+        {" "}
+        <ProductMoreInfo product={product}></ProductMoreInfo>
+      </div>
     </div>
   );
 };
