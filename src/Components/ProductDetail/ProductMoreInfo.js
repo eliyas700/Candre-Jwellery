@@ -7,7 +7,7 @@ import diamond from "../../Assets/diamond.webp";
 import car from "../../Assets/domesticshipping.webp";
 import customercare from "../../Assets/Customer_care.svg";
 const ProductMoreInfo = ({ product }) => {
-  const { name, rating, reviews, totalSell, price, styleNo } = product;
+  const { styleNo } = product;
   return (
     <div className="bg-[#f0f0f0] pt-7 ">
       <div className=" flex justify-between">
