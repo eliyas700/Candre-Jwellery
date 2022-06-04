@@ -145,23 +145,23 @@ const ProductMoreInfo = ({ product }) => {
             </li>
             <li className="flex items-center my-2">
               <img src={ring} alt="" />
-              <span>Lorem ipsum dolor, sit amet cons</span>
+              <span className="ml-1"> Lorem ipsum dolor, sit </span>
             </li>
             <li className="flex items-center my-2">
               <img src={diamond} alt="" />
-              <span>Lorem ipsum dolor, sit amet cons</span>
+              <span className="ml-1"> Lorem ipsum dolor, sit </span>
             </li>
             <li className="flex items-center my-2">
               <img src={customercare} alt="" />
-              <span>Lorem ipsum dolor, sit amet cons</span>
+              <span className="ml-1"> Lorem ipsum dolor, sit </span>
             </li>
             <li className="flex items-center my-2">
               <img src={certificate} alt="" />
-              <span>Lorem ipsum dolor, sit amet cons</span>
+              <span className="ml-1"> Lorem ipsum dolor, sit </span>
             </li>
             <li className="flex items-center my-2">
               <img src={car} alt="" />
-              <span>Lorem ipsum dolor, sit amet cons</span>
+              <span className="ml-1"> Lorem ipsum dolor, sit </span>
             </li>
           </ul>
         </div>

@@ -9,6 +9,7 @@ import ProductDetails from "./Components/ProductDetail/ProductDetails";
 import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
+import Reviews from "./Components/ReviewSection/Reviews";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <Header2></Header2>
       <Header3></Header3>
       <ProductDetails></ProductDetails>
+      <Reviews></Reviews>
       <MainFooter></MainFooter>
     </div>
   );

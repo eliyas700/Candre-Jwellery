@@ -2,6 +2,14 @@ import React from "react";
 import Rating from "react-rating";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactDOM from "react-dom";
+import {
+  Equation,
+  EquationEvaluate,
+  EquationOptions,
+  defaultErrorHandler,
+} from "react-equation";
+import { defaultVariables, defaultFunctions } from "equation-resolver";
 const ProductInfo = ({ product }) => {
   const { name, rating, reviews, totalSell, price } = product;
   return (
@@ -54,77 +62,18 @@ const ProductInfo = ({ product }) => {
             </div>
             <div class="collapse-content">
               <p className="text-[13px]">
-                <div class="price_bifurcation">
-                  <div class="gold_div">
-                    <span class="gold top">Metal</span>
-                    <span class="gold_rate bottom" id="gold_rate">
-                      7,910
-                    </span>
-                  </div>
-                  <div class="add">+</div>
-                  <div class="diamond_div" style={{ width: "auto" }}>
-                    <span class="diamond top">Diamond</span>
-                    <span class="diamond_rate bottom" id="diamond_rate">
-                      <span class="crossed">9,720</span>&nbsp;7,290
-                    </span>
-                  </div>
-
-                  <div class="add">+</div>
-                  <div class="making_charges_div">
-                    <span class="making_charges top">Making Charges</span>
-                    <span
-                      class="making_charges_rate bottom"
-                      id="making_charges_rate"
-                      style={{
-                        textDecoration: "none",
-                        textAlign: "center",
-                        width: "90px ",
-                        float: "left",
-                        display: "table",
-                        paddingLeft: "10px",
-                      }}
-                    >
-                      7,650
-                    </span>
-
-                    <span
-                      class="making_charges_rate_new bottom"
-                      id="making_charges_rate_new"
-                    ></span>
-                  </div>
-                  <div class="add">+</div>
-                  <div class="vat_div">
-                    <span class="vat top">GST(3%)</span>
-                    <span class="vat__">
-                      <span
-                        class="vat_rate bottom original_gst"
-                        id="vat_rate"
-                        style={{
-                          textDecoration: "line-through",
-                          float: "left",
-                          display: "inline-flex",
-                          width: "auto",
-                          marginRight: "8px",
-                          textAlign: "center",
-                        }}
-                      >
-                        758
-                      </span>
-                      <span
-                        class="vat_rate bottom discounted_gst"
-                        id="vat_rate_new"
-                        style={{
-                          display: "inline-flex",
-                          width: "auto",
-                          textAlign: "center",
-                          clear: "none",
-                        }}
-                      >
-                        686
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                <>
+                  <EquationOptions
+                    variables={defaultVariables}
+                    functions={defaultFunctions}
+                    errorHandler={defaultErrorHandler}
+                  >
+                    <Equation
+                      value={`Metal/7910 + Diamond /  7290 + Making Charges / 7650 + GST % / 686`}
+                    />
+                    {/* <EquationEvaluate value="." /> */}
+                  </EquationOptions>
+                </>
               </p>
             </div>
           </div>
@@ -142,25 +91,25 @@ const ProductInfo = ({ product }) => {
             14K
           </label>
         </div>
-        <div className=" my-4 flex justify-between w-[70%] items-center">
+        <div className=" my-4 flex justify-between w-[80%] items-center">
           <span>Diamond Quality: </span>
-          <label className="text-accent" htmlFor="12GH">
+          <label className="" htmlFor="12GH">
             <input type="radio" name="diamond" value="12GH" id="12GH" />
             12GH
           </label>
-          <label className="text-accent" htmlFor="14GH">
+          <label className="" htmlFor="14GH">
             <input type="radio" name="diamond" value="14GH" id="14GH" />
             14GH
           </label>
-          <label className="text-accent" htmlFor="16GH">
+          <label className="" htmlFor="16GH">
             <input type="radio" name="diamond" value="12GH" id="16GH" />
             16GH
           </label>
-          <label className="text-accent" htmlFor="18GH">
+          <label className="" htmlFor="18GH">
             <input type="radio" name="diamond" value="12GH" id="18GH" />
             18GH
           </label>
-          <label className="text-accent" htmlFor="20GH">
+          <label className="" htmlFor="20GH">
             <input type="radio" name="diamond" value="12GH" id="20GH" />
             20GH
           </label>
