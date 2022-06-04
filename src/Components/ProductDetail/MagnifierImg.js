@@ -4,7 +4,7 @@ import watchImg300 from "../../Assets/small1.png";
 import watchImg1200 from "../../Assets/big1.png";
 const MagnifierImg = () => {
   return (
-    <div style={{ width: "400px", height: "400px" }}>
+    <div className="z-50" style={{ width: "400px", height: "400px" }}>
       <ReactImageMagnify
         width="200px"
         {...{

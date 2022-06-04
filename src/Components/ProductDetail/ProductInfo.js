@@ -5,11 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ProductInfo = ({ product }) => {
   const { name, rating, reviews, totalSell, price } = product;
   return (
-    <div className="py-3">
+    <div className="py-3 text-info">
       <div>
-        <h1 className=" text-3xl text-left text-accent  my-4 font-serif tracking-tight">
-          {name}
-        </h1>
+        <h1 className=" text-lg font-bold text-left text-info  my-4">{name}</h1>
         <div className="w-72 flex justify-around">
           <div className="flex">
             <Rating
@@ -24,12 +22,113 @@ const ProductInfo = ({ product }) => {
             <p>({reviews})</p>
           </div>
           <p className="font-semibold">
-            Total Sell: <span className="text-2xl font-serif">{totalSell}</span>
+            Total Sell: <span className="text-xl ">{totalSell}</span>
           </p>
         </div>
-        <h2 className=" mt-5 text-left text-4xl text-black font-bold font-serif">
-          Rs {price}
+        <h2 className=" mt-5 text-left text-2xl text-black font-bold ">
+          Rs. {price}
         </h2>
+        <div>
+          <div
+            tabindex="0"
+            class="collapse my-3 text-left collapse-plus border border-base-300 border-x-0 pb-1 bg-base-100"
+          >
+            <div class="collapse-title text-[16px] min-h-fit  py-2">
+              View Product Description
+            </div>
+            <div class="collapse-content">
+              <p className="text-[13px]">
+                Nothing says perfection and beauty like this dreamy looking and
+                alluring gold and diamond engagement ring. The unusual design
+                and irresistible, gorgeous diamond will surely help you get a
+                'yes'!
+              </p>
+            </div>
+          </div>
+          <div
+            tabindex="0"
+            class="collapse my-3 text-left collapse-plus border border-base-300 border-x-0 pb-1 bg-base-100"
+          >
+            <div class="collapse-title text-[16px] min-h-fit  py-2">
+              View Price Breakup
+            </div>
+            <div class="collapse-content">
+              <p className="text-[13px]">
+                <div class="price_bifurcation">
+                  <div class="gold_div">
+                    <span class="gold top">Metal</span>
+                    <span class="gold_rate bottom" id="gold_rate">
+                      7,910
+                    </span>
+                  </div>
+                  <div class="add">+</div>
+                  <div class="diamond_div" style={{ width: "auto" }}>
+                    <span class="diamond top">Diamond</span>
+                    <span class="diamond_rate bottom" id="diamond_rate">
+                      <span class="crossed">9,720</span>&nbsp;7,290
+                    </span>
+                  </div>
+
+                  <div class="add">+</div>
+                  <div class="making_charges_div">
+                    <span class="making_charges top">Making Charges</span>
+                    <span
+                      class="making_charges_rate bottom"
+                      id="making_charges_rate"
+                      style={{
+                        textDecoration: "none",
+                        textAlign: "center",
+                        width: "90px ",
+                        float: "left",
+                        display: "table",
+                        paddingLeft: "10px",
+                      }}
+                    >
+                      7,650
+                    </span>
+
+                    <span
+                      class="making_charges_rate_new bottom"
+                      id="making_charges_rate_new"
+                    ></span>
+                  </div>
+                  <div class="add">+</div>
+                  <div class="vat_div">
+                    <span class="vat top">GST(3%)</span>
+                    <span class="vat__">
+                      <span
+                        class="vat_rate bottom original_gst"
+                        id="vat_rate"
+                        style={{
+                          textDecoration: "line-through",
+                          float: "left",
+                          display: "inline-flex",
+                          width: "auto",
+                          marginRight: "8px",
+                          textAlign: "center",
+                        }}
+                      >
+                        758
+                      </span>
+                      <span
+                        class="vat_rate bottom discounted_gst"
+                        id="vat_rate_new"
+                        style={{
+                          display: "inline-flex",
+                          width: "auto",
+                          textAlign: "center",
+                          clear: "none",
+                        }}
+                      >
+                        686
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="flex w-[35%] my-5 items-center justify-between">
           <span>Metal Selection:</span>
 
