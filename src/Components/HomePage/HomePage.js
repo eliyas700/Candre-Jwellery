@@ -1,10 +1,9 @@
 import React from "react";
-import HomePageModal from "./HomePageModal";
-
+import HomePageSlider from "./HomePageSlider";
 const HomePage = () => {
   return (
     <div>
-      <HomePageModal></HomePageModal>
+      <HomePageSlider></HomePageSlider>
     </div>
   );
 };
