@@ -6,6 +6,7 @@ import Header3 from "./Components/Header3/Header3";
 import "swiper/css";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
+import ProductDetails from "./Components/ProductDetail/ProductDetails";
 function App() {
   return (
     <div className="App">

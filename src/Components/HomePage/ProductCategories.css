@@ -1,0 +1,100 @@
+.categories {
+    overflow: hidden;
+}
+
+.categories>img:hover {
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+
+}
+
+.cat-1::after {
+    content: "Stunning  Rings ";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cat-2::after {
+    content: "Classy EarRings ";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    color: #885858;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cat-3::after {
+    content: "Gorgeous Bracelets ";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    color: #885858;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cat-4::after {
+    content: "Dainty pendants ";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    color: #ffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cat-5::after {
+    content: "Stylish Mangalsutras ";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    color: #ffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cat-6::after {
+    content: "Elegant Necklaces";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    color: #885858;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cat-7::after {
+    content: "Statement Chains";
+    width: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    color: #ffff;
+    text-align: center;
+    margin: 0 auto;
+}
