@@ -1,5 +1,6 @@
 import React from "react";
 import Advantages from "../Advantages/Advantages";
+import Reviews from "../ReviewSection/Reviews";
 import MagnifierImg from "./MagnifierImg";
 import ProductInfo from "./ProductInfo";
 import ProductMoreInfo from "./ProductMoreInfo";
@@ -22,11 +23,13 @@ const ProductDetails = () => {
       <div>
         {" "}
         <ProductMoreInfo product={product}></ProductMoreInfo>
+        <Reviews></Reviews>
       </div>
       <div>
         <h2 className="text-3xl mt-3 font-['Cormorant'] ">
           Advantages of Joolie
         </h2>
+
         <Advantages></Advantages>
       </div>
     </div>
