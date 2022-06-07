@@ -56,6 +56,7 @@ const Advantages = () => {
   ];
   return (
     <>
+      <h2 className="text-3xl mt-10 font-semibold">Advantages of Joolie</h2>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}

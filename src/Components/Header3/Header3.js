@@ -8,11 +8,13 @@ const Header3 = () => {
         <li>
           <div class="dropdown dropdown-hover">
             <label tabindex="0" class=" m-1 ">
-              <a href="/">Trending</a>
+              <a href="/" className=" pb-5 hover:border-b-2 border-[#2fbccc]">
+                Trending
+              </a>
             </label>
             <div
               tabindex="0"
-              class="dropdown-content  p-10 shadow bg-base-100  w-[90vw] text-left flex justify-between "
+              class="dropdown-content  p-10 shadow bg-base-100  w-[90vw] text-left flex justify-between top-12 "
             >
               <ul>
                 <li className="mb-2 text-sm">

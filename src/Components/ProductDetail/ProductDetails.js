@@ -26,9 +26,7 @@ const ProductDetails = () => {
         <Reviews></Reviews>
       </div>
       <div>
-        <h2 className="text-3xl mt-3 font-['Cormorant'] ">
-          Advantages of Joolie
-        </h2>
+        
 
         <Advantages></Advantages>
       </div>

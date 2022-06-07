@@ -7,6 +7,8 @@ import "swiper/css";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import ProductDetails from "./Components/ProductDetail/ProductDetails";
+import ProductSearchPage from "./Components/ProductSearchPage/ProductSearchPage";
+import ContactUs from "./Components/ContactUs/ContactUs";
 function App() {
   return (
     <div className="App">
@@ -15,8 +17,17 @@ function App() {
       <Header3></Header3>
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
+        <Route
+          path="/productSearch"
+          element={<ProductSearchPage></ProductSearchPage>}
+        ></Route>
+        <Route
+          path="/singleProduct"
+          element={<ProductDetails></ProductDetails>}
+        ></Route>
+        <Route path="/contact" element={<ContactUs></ContactUs>}></Route>
       </Routes>
-      {/* <ProductDetails></ProductDetails> */}
+
       <MainFooter></MainFooter>
     </div>
   );

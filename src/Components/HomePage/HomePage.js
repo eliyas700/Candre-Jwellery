@@ -1,4 +1,5 @@
 import React from "react";
+import Advantages from "../Advantages/Advantages";
 import HomePageSlider from "./HomePageSlider";
 import ProductCategories from "./ProductCategories";
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
       <HomePageSlider></HomePageSlider>
       <ProductCategories></ProductCategories>
+      <Advantages></Advantages>
     </div>
   );
 };

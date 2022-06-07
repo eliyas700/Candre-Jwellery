@@ -7,6 +7,7 @@ import img4 from "../../Assets/chain.webp";
 import img5 from "../../Assets/mangalsutra.webp";
 import img6 from "../../Assets/necklace.webp";
 import img7 from "../../Assets/pendant.webp";
+import { Link } from "react-router-dom";
 const ProductCategories = () => {
   return (
     <div className="w-[90%] mx-auto">
@@ -23,7 +24,9 @@ const ProductCategories = () => {
         <div className="w-[36%] ">
           <div className="grid grid-cols-2 gap-5">
             <div class="categories cat-1 relative">
-              <img src={img1} alt="" />
+              <Link to="/productSearch">
+                <img src={img1} alt="" />
+              </Link>
             </div>
             <div class="categories cat-2  relative">
               <img src={img3} alt="" />
