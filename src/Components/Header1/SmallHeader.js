@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import tracking from "../../Assets/tracking.svg";
 const SmallHeader = () => {
   return (
@@ -36,7 +37,9 @@ const SmallHeader = () => {
         </div>
         <div className="w-[25%]">
           <ul className="flex justify-around">
-            <li className="text-sm">Contact Us</li>
+            <Link to="/contact" className="text-sm">
+              Contact Us
+            </Link>
             <li className="text-sm">Blog</li>
             <li>
               <select class=" border-2 rounded-2xl text-xs border-primary">

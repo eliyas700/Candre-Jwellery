@@ -43,3 +43,8 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.border-left {
+  border-left: 1px solid #716f6f;
+  height: auto;
+}
