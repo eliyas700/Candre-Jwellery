@@ -4,6 +4,7 @@ import img from "../../Assets/cartpage_offer.webp";
 import img2 from "../../Assets/small1.png";
 import { BsTrash, BsChevronDoubleLeft } from "react-icons/bs";
 import img3 from "../../Assets/correct.webp";
+import Advantages from "../Advantages/Advantages";
 const UserCart = () => {
   return (
     <div className="w-[98%] mx-auto">
@@ -87,7 +88,7 @@ const UserCart = () => {
               <div class="card-body py-2 text-left">
                 <h2
                   style={{ letterSpacing: ".5px" }}
-                  className="text-[16px] text-[#404040] "
+                  className="text-[16px] text-[#404040] font-semibold"
                 >
                   Spear Heads Solitaire Diamond Engagement Ring
                 </h2>
@@ -230,12 +231,15 @@ const UserCart = () => {
             </div>
           </div>
 
-          <button className="flex items-center p-1 w-[210px] mt-20 mb-6 border-2 border-primary hover:border-[#2fbccc]">
+          <Link
+            to="/"
+            className="flex items-center p-1 w-[210px] mt-20 mb-6 border-2 border-primary hover:border-[#2fbccc]"
+          >
             <BsChevronDoubleLeft /> Continue Shopping
-          </button>
+          </Link>
         </div>
 
-        <div className="w-[30%]">
+        <div className="w-[32%]">
           <div className="p-3 border-2">
             <div className="flex  justify-between ">
               <p className="text-info font-semibold">Apply Offer / Voucher</p>
@@ -289,6 +293,7 @@ const UserCart = () => {
           </div>
         </div>
       </div>
+      <Advantages></Advantages>
     </div>
   );
 };
