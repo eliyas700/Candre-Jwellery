@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import img from "../../Assets/cartpage_offer.webp";
 import img2 from "../../Assets/small1.png";
 import { BsTrash, BsChevronDoubleLeft } from "react-icons/bs";
-
+import img3 from "../../Assets/correct.webp";
 const UserCart = () => {
   return (
     <div className="w-[98%] mx-auto">
@@ -76,7 +76,7 @@ const UserCart = () => {
       <h1 className="uppercase text-info text-lg text-left my-2">
         In Cart - 1 item
       </h1>
-      <div>
+      <div className="flex justify-between">
         <div className="w-[66%] ">
           <div className="shadow-xl border-2 w-[100%]">
             {" "}
@@ -235,7 +235,59 @@ const UserCart = () => {
           </button>
         </div>
 
-        <div className="w-[30%]"></div>
+        <div className="w-[30%]">
+          <div className="p-3 border-2">
+            <div className="flex  justify-between ">
+              <p className="text-info font-semibold">Apply Offer / Voucher</p>
+              <button className=" border-2 border-[#2fbccc] text-[#2fbccc] font-semibold p-1 text-sm">
+                CHECK OFFERS
+              </button>
+            </div>
+            <div className="mt-3 py-2 flex justify-between items-center">
+              <p className="flex items-center font-bold text-sm text-[#448202]">
+                <img src={img3} alt="" /> "MONSOON" applied successfully
+              </p>
+              <BsTrash />
+            </div>
+          </div>
+          <h1 className="text-sm my-3 text-left flex justify-between">
+            Total Savings In this order:{" "}
+            <span className="text-[#448202] font-bold text-normal">
+              Rs.2032
+            </span>
+          </h1>
+          <div className="bg-[#eaf8fa] py-5">
+            <h2 className="uppercase text-2xl text-center border-b-[1px] border-dashed border-[#bdbdbd] py-4 ">
+              Order Summary
+            </h2>
+            <div className="">
+              <p className="flex px-4 justify-between ">
+                Total [1 item]: <span>Rs.29,089</span>
+              </p>
+              <p className="flex justify-between text-[#448202] px-4 font-bold text-sm py-2">
+                Discount Monsoon: <span className="font-normal"> -Rs.2503</span>
+              </p>
+              <p className="flex justify-between text-[#448202] px-4 font-bold text-sm py-3  ">
+                Insurance: <span className="font-normal"> Rs.273</span>
+              </p>
+              <p className="font-bold text-xl py-4 flex justify-between border-y-[1px] border-dashed border-[#bdbdbd] px-4">
+                Grand Total : <span>Rs 27579 </span>
+              </p>
+            </div>
+          </div>
+          <button className="bg-[#2fbccc] w-full border-2 uppercase text-xl py-4 font-semibold text-white mt-4 ">
+            Proceed to Checkout
+          </button>
+          <div className="flex items-center mx-auto justify-center my-3">
+            <input
+              type="checkbox"
+              class="checkbox checkbox-success bg-success"
+            />
+            <label className="text-sm ml-2" htmlFor="Safe">
+              Your jewellery is safely insured
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   );
