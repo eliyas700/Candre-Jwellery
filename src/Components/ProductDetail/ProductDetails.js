@@ -1,5 +1,8 @@
 import React from "react";
 import Advantages from "../Advantages/Advantages";
+import SmallHeader from "../Header1/SmallHeader";
+import Header2 from "../Header2/Header2";
+import Header3 from "../Header3/Header3";
 import Reviews from "../ReviewSection/Reviews";
 import MagnifierImg from "./MagnifierImg";
 import ProductInfo from "./ProductInfo";
@@ -16,6 +19,9 @@ const product = {
 const ProductDetails = () => {
   return (
     <div>
+      <SmallHeader></SmallHeader>
+      <Header2></Header2>
+      <Header3></Header3>
       <div className="grid grid-cols-2">
         <MagnifierImg></MagnifierImg>
         <ProductInfo product={product}></ProductInfo>
@@ -26,8 +32,6 @@ const ProductDetails = () => {
         <Reviews></Reviews>
       </div>
       <div>
-        
-
         <Advantages></Advantages>
       </div>
     </div>

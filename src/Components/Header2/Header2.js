@@ -101,9 +101,9 @@ const Header2 = () => {
           <button className="mr-5">
             <img className="w-[20px]" src={heart} alt="" />
           </button>
-          <button className="mr-5">
+          <Link to="/cart" className="mr-5">
             <img className="w-[20px]" src={cart} alt="" />
-          </button>
+          </Link>
           <div class="dropdown dropdown-hover mr-5">
             <label tabindex="0" class=" m-1">
               <img className="w-[20px]" src={user} alt="" />
