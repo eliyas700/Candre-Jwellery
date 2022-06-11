@@ -117,9 +117,12 @@ const Header2 = () => {
                 Access account and Manage orders
               </small>
               <li>
-                <button className="btn mt-2 bg-[#2fbccc] hover:bg-transparent mx-4">
+                <label
+                  for="signInModal"
+                  class="btn  mt-2 bg-[#2fbccc] hover:bg-transparent mx-4 modal-button"
+                >
                   Sign In
-                </button>
+                </label>
               </li>
               <li>
                 <button className="btn rounded-lg mb-3 mt-2 bg-transparent hover:bg-[#2fbccc] mx-4">
