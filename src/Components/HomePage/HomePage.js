@@ -1,7 +1,6 @@
 import React from "react";
 import Advantages from "../Advantages/Advantages";
-import SignUp from "../Authentication/SignIn";
-import SignIn from "../Authentication/SignIn";
+import SignUp from "../Authentication/SignUp";
 import SmallHeader from "../Header1/SmallHeader";
 import Header2 from "../Header2/Header2";
 import Header3 from "../Header3/Header3";
@@ -16,7 +15,7 @@ const HomePage = () => {
       <HomePageSlider></HomePageSlider>
       <ProductCategories></ProductCategories>
       <Advantages></Advantages>
-      <SignUp></SignUp>
+      <SignUp />
     </div>
   );
 };
