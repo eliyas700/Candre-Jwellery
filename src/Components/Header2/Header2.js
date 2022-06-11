@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import heart from "../../Assets/heart.svg";
 import user from "../../Assets/user.svg";
 import cart from "../../Assets/cart.svg";
 import logo from "../../Assets/logo.svg";
 import { Link } from "react-router-dom";
 const Header2 = () => {
+  const [signUp, setSignUp] = useState(false);
+  const [signIn, setSignIn] = useState(true);
   return (
     <div className="w-[85%] mx-auto">
       <div className="navbar bg-base-100 my-2 ">
@@ -117,10 +119,12 @@ const Header2 = () => {
                 Access account and Manage orders
               </small>
               <li>
-                {" "}
-                <button className="btn rounded-lg mb-3 mt-2 bg-[#2fbccc] hover:bg-transparent mx-4">
+                <label
+                  for="signInModal"
+                  className="btn rounded-lg mb-3 mt-2 bg-[#2fbccc] hover:bg-transparent mx-4 modal-button "
+                >
                   Log In
-                </button>
+                </label>
               </li>
               <li>
                 <label
