@@ -49,25 +49,19 @@ const UserWishList = () => {
               <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
               <ul className="menu p-4 w-48 lg:w-56 bg-primary  text-neutral text-sm ">
                 {/* <!-- Sidebar content here --> */}
-                <h2 className="text-xl font-semibold border-b-2 mb-3 uppercase pb-2">
-                  Dashboard
-                </h2>
-                <li>
-                  <Link to="/wishlist" className="border-b-2">
-                    Dashboard
-                  </Link>
-                </li>
+                <div className=" mb-20 mt-4 uppercase pb-2">
+                  <h2 className="text-xl font-semibold ">Dashboard</h2>
+                  <div className="w-[60px] h-[2px] bg-slate-300 mt-2 mx-auto"></div>
+                </div>
 
                 <li>
-                  <div class="dropdown relative">
-                    <label
-                      tabindex="0"
-                      class="flex justify-between items-center"
-                    >
-                      Listing
-                    </label>
-                  </div>
+                  <Link to="/wishlist">Dashboard</Link>
                 </li>
+                <hr />
+                <li className="pt-2">
+                  <Link to="/wishlist/purchasedItem">Purchased Items</Link>
+                </li>
+                <hr />
               </ul>
             </div>
           </div>

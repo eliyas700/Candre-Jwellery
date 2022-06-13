@@ -12,6 +12,7 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import UserCart from "./Components/UserCart/UserCart";
 import UserWishList from "./Components/UserWishList/UserWishList";
 import DashboardInfo from "./Components/UserWishList/DashboardInfo";
+import PurchasedItems from "./Components/UserWishList/PurchasedItems";
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
         <Route path="/cart" element={<UserCart />}></Route>
         <Route path="/wishlist" element={<UserWishList />}>
           <Route index element={<DashboardInfo />}></Route>
+          <Route path="purchasedItem" element={<PurchasedItems />}></Route>
         </Route>
       </Routes>
 
