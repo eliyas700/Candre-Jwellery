@@ -53,7 +53,9 @@ const UserWishList = () => {
                   Dashboard
                 </h2>
                 <li>
-                  <Link to="/wishlist">Dashboard</Link>
+                  <Link to="/wishlist" className="border-b-2">
+                    Dashboard
+                  </Link>
                 </li>
 
                 <li>
