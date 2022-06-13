@@ -52,7 +52,6 @@ const PurchasedItems = () => {
           <div className="mx-auto w-[30%] my-7">
             <div class="btn-group  my-4">
               <button class="btn ">Previous</button>
-
               <button class="btn">Next</button>
             </div>
           </div>
