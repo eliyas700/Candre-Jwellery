@@ -78,6 +78,10 @@ const UserWishList = () => {
                   <Link to="/wishlist/orderTracking">Order Tracking</Link>
                 </li>
                 <hr />
+                <li className="pt-2">
+                  <Link to="/wishlist/favoriteSellers">Favorite Sellers</Link>
+                </li>
+                <hr />
               </ul>
             </div>
           </div>
