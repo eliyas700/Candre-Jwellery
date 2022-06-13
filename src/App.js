@@ -19,6 +19,7 @@ import Withdraw from "./Components/UserWishList/Withdraw";
 import OrderTracking from "./Components/UserWishList/OrderTracking";
 import FavoriteSeller from "./Components/UserWishList/FavoriteSeller";
 import Message from "./Components/UserWishList/Message";
+import EditProfile from "./Components/UserWishList/EditProfile";
 function App() {
   return (
     <div className="App">
@@ -43,6 +44,7 @@ function App() {
           <Route path="orderTracking" element={<OrderTracking />}></Route>
           <Route path="favoriteSellers" element={<FavoriteSeller />}></Route>
           <Route path="message" element={<Message />}></Route>
+          <Route path="editProfile" element={<EditProfile />}></Route>
         </Route>
       </Routes>
 
