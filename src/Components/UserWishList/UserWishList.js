@@ -99,9 +99,12 @@ const UserWishList = () => {
                   <Link to="/">Log Out</Link>
                 </li>
                 <hr />
-                <button className="flex mt-7 justify-between items-center  w-[120px] h-[40px] font-semi px-2 bg-[#424A4D] text-white hover:bg-[white] hover:text-[#424A4D] border-2 ">
+                <Link
+                  to="/wishlist/packages"
+                  className="flex mt-7 justify-between items-center  w-[120px] h-[40px] font-semi px-2 bg-[#424A4D] text-white hover:bg-[white] hover:text-[#424A4D] border-2 "
+                >
                   <FaDollarSign /> Pricing Plans
-                </button>
+                </Link>
               </ul>
             </div>
           </div>

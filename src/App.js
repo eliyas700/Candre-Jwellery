@@ -21,6 +21,7 @@ import FavoriteSeller from "./Components/UserWishList/FavoriteSeller";
 import Message from "./Components/UserWishList/Message";
 import EditProfile from "./Components/UserWishList/EditProfile";
 import ResetPassword from "./Components/UserWishList/ResetPassword";
+import Packages from "./Components/UserWishList/Packages";
 function App() {
   return (
     <div className="App">
@@ -47,6 +48,7 @@ function App() {
           <Route path="message" element={<Message />}></Route>
           <Route path="editProfile" element={<EditProfile />}></Route>
           <Route path="resetPassword" element={<ResetPassword />}></Route>
+          <Route path="packages" element={<Packages />}></Route>
         </Route>
       </Routes>
 
