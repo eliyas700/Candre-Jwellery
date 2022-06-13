@@ -20,6 +20,7 @@ import OrderTracking from "./Components/UserWishList/OrderTracking";
 import FavoriteSeller from "./Components/UserWishList/FavoriteSeller";
 import Message from "./Components/UserWishList/Message";
 import EditProfile from "./Components/UserWishList/EditProfile";
+import ResetPassword from "./Components/UserWishList/ResetPassword";
 function App() {
   return (
     <div className="App">
@@ -45,6 +46,7 @@ function App() {
           <Route path="favoriteSellers" element={<FavoriteSeller />}></Route>
           <Route path="message" element={<Message />}></Route>
           <Route path="editProfile" element={<EditProfile />}></Route>
+          <Route path="resetPassword" element={<ResetPassword />}></Route>
         </Route>
       </Routes>
 

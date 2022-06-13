@@ -4,7 +4,7 @@ import DashboardHeader from "./DashboardHeader";
 const OrderTracking = () => {
   return (
     <div>
-      <DashboardHeader title={"Withdraw"}></DashboardHeader>
+      <DashboardHeader title={"Order Tracking"}></DashboardHeader>
       <div className="w-[88%] mx-auto h-auto bg-[#f8f8f8] p-4 mt-4 py-20">
         <div className="flex items-center">
           <h2 className="text-2xl text-left font-semibold pb-2 mr-4">
