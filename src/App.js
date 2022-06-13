@@ -18,6 +18,7 @@ import Transactions from "./Components/UserWishList/Transactions";
 import Withdraw from "./Components/UserWishList/Withdraw";
 import OrderTracking from "./Components/UserWishList/OrderTracking";
 import FavoriteSeller from "./Components/UserWishList/FavoriteSeller";
+import Message from "./Components/UserWishList/Message";
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,7 @@ function App() {
           <Route path="withdraw" element={<Withdraw />}></Route>
           <Route path="orderTracking" element={<OrderTracking />}></Route>
           <Route path="favoriteSellers" element={<FavoriteSeller />}></Route>
+          <Route path="message" element={<Message />}></Route>
         </Route>
       </Routes>
 

@@ -82,6 +82,10 @@ const UserWishList = () => {
                   <Link to="/wishlist/favoriteSellers">Favorite Sellers</Link>
                 </li>
                 <hr />
+                <li className="pt-2">
+                  <Link to="/wishlist/message">Message</Link>
+                </li>
+                <hr />
               </ul>
             </div>
           </div>
