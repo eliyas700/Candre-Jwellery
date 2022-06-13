@@ -70,6 +70,14 @@ const UserWishList = () => {
                   <Link to="/wishlist/transaction">Transactions</Link>
                 </li>
                 <hr />
+                <li className="pt-2">
+                  <Link to="/wishlist/withdraw">Withdraw</Link>
+                </li>
+                <hr />
+                <li className="pt-2">
+                  <Link to="/wishlist/orderTracking">Order Tracking</Link>
+                </li>
+                <hr />
               </ul>
             </div>
           </div>

@@ -15,6 +15,8 @@ import DashboardInfo from "./Components/UserWishList/DashboardInfo";
 import PurchasedItems from "./Components/UserWishList/PurchasedItems";
 import Deposit from "./Components/UserWishList/Deposit";
 import Transactions from "./Components/UserWishList/Transactions";
+import Withdraw from "./Components/UserWishList/Withdraw";
+import OrderTracking from "./Components/UserWishList/OrderTracking";
 function App() {
   return (
     <div className="App">
@@ -35,6 +37,8 @@ function App() {
           <Route path="purchasedItem" element={<PurchasedItems />}></Route>
           <Route path="deposit" element={<Deposit />}></Route>
           <Route path="transaction" element={<Transactions />}></Route>
+          <Route path="withdraw" element={<Withdraw />}></Route>
+          <Route path="orderTracking" element={<OrderTracking />}></Route>
         </Route>
       </Routes>
 
