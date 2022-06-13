@@ -11,10 +11,15 @@ import img2 from "../../Assets/c012928_2_4.webp";
 import img3 from "../../Assets/c012928_5_3.webp";
 // import required modules
 import { EffectCube, Pagination } from "swiper";
+import { Link, useNavigate } from "react-router-dom";
 const FilteredItemCard = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <div class="card card-compact w-[273px] h-[378px] shadow-none hover:shadow-xl  bg-base-100 rounded-none ">
+      <div
+        onClick={() => navigate("/singleProduct")}
+        class="card card-compact w-[273px] h-[378px] shadow-none hover:shadow-xl  bg-base-100 rounded-none "
+      >
         <figure>
           <>
             <Swiper
