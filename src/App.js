@@ -14,6 +14,7 @@ import UserWishList from "./Components/UserWishList/UserWishList";
 import DashboardInfo from "./Components/UserWishList/DashboardInfo";
 import PurchasedItems from "./Components/UserWishList/PurchasedItems";
 import Deposit from "./Components/UserWishList/Deposit";
+import Transactions from "./Components/UserWishList/Transactions";
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,7 @@ function App() {
           <Route index element={<DashboardInfo />}></Route>
           <Route path="purchasedItem" element={<PurchasedItems />}></Route>
           <Route path="deposit" element={<Deposit />}></Route>
+          <Route path="transaction" element={<Transactions />}></Route>
         </Route>
       </Routes>
 
