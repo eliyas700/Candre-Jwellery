@@ -1,11 +1,44 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
 import signUpImg from "../../Assets/OnlineJewellery.png";
 import signInImg from "../../Assets/sign_in.webp";
 import whatsapp from "../../Assets/whatsapp_chat.webp";
+
+const temp = {
+  email: "",
+  password: "",
+  user_type: "Customer",
+};
 const SignInModal = () => {
   const [signUp, setSignUp] = useState(false);
   const [signIn, setSignIn] = useState(true);
+
+  const [values, setValues] = useState(temp);
+  const onChangeHandler = (e) => {
+    let { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("https://api.eazzycard.com/accounts/login", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+        if (response.status === 200) {
+        }
+      })
+      .catch((error) => {
+        console.log("Invalid Credentials!");
+      });
+  };
 
   return (
     <div>
@@ -31,10 +64,21 @@ const SignInModal = () => {
                 <div className="w-[50%]">
                   <h2 className="uppercase mt-10 text-xl ">login</h2>
                   <div className="w-[60px] h-[2px] bg-success mx-auto mb-10"></div>
-                  <form>
+                  <form onSubmit={onSubmit}>
                     <input
                       type="email"
+                      name="email"
+                      value={values.email}
+                      onChange={onChangeHandler}
                       placeholder="Enter E-mail Id/Phone number"
+                      className="p-[10px] border-[1px] border-solid border-[#9A9A9A] h-[40px] w-[80%] mb-5 rounded-xl"
+                    />
+                    <input
+                      type="password"
+                      name="password"
+                      onChange={onChangeHandler}
+                      value={values.value}
+                      placeholder="Enter Password"
                       className="p-[10px] border-[1px] border-solid border-[#9A9A9A] h-[40px] w-[80%] mb-5 rounded-xl"
                     />
 

@@ -105,6 +105,11 @@ const SignUp = () => {
                     placeholder="Enter E-mail Id/Phone number"
                     className="p-[10px] border-[1px] border-solid border-[#9A9A9A] h-[40px] w-[80%] mb-5 rounded-xl"
                   />
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    className="p-[10px] border-[1px] border-solid border-[#9A9A9A] h-[40px] w-[80%] mb-5 rounded-xl"
+                  />
                   <button
                     type="submit"
                     className="uppercase text-white w-[80%] h-[40px] bg-success rounded-xl my-4 "
