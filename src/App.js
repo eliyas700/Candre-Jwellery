@@ -27,13 +27,19 @@ import { ToastContainer } from "react-toastify";
 
 import axios from "axios";
 
+import { TokenService } from "./Services/Storage.service.js";
+import ApiService from "./Services/api.service.js";
 function App() {
   const baseURL = "https://api.eazzycard.com/";
   axios.defaults.baseURL = baseURL;
+
+  if (TokenService.getToken()) {
+    ApiService.setHeader();
+  }
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage></HomePage>}></Route>
+        <Route path="/" element={<HomePage />} />
         <Route
           path="/productSearch"
           element={<ProductSearchPage></ProductSearchPage>}
@@ -43,7 +49,12 @@ function App() {
           element={<ProductDetails></ProductDetails>}
         ></Route>
         <Route path="/contact" element={<ContactUs></ContactUs>}></Route>
-        <Route path="/cart" element={<UserCart />}></Route>
+
+        {TokenService.getToken() && (
+          <>
+            <Route path="/cart" element={<UserCart />}></Route>
+          </>
+        )}
         <Route path="/wishlist" element={<UserWishList />}>
           <Route index element={<DashboardInfo />}></Route>
           <Route path="purchasedItem" element={<PurchasedItems />}></Route>

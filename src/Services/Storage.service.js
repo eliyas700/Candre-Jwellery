@@ -27,6 +27,10 @@ const TokenService = {
     localStorage.setItem(REFRESH_TOKEN_KEY, refreshToken);
   },
 
+  getUserData() {
+    return JSON.parse(localStorage.getItem(DATA));
+  },
+
   removeRefreshToken() {
     localStorage.removeItem(REFRESH_TOKEN_KEY);
   },
@@ -41,18 +45,6 @@ const TokenService = {
 
   removeExpiryTime() {
     localStorage.removeItem(EXPIRY_TIME);
-  },
-
-  getRelationManagerId() {
-    return localStorage.getItem(RELATION_ID);
-  },
-
-  saveRelationManagerId(relationId) {
-    localStorage.setItem(RELATION_ID, relationId);
-  },
-
-  removeRelationManagerId() {
-    localStorage.removeItem(RELATION_ID);
   },
 
   saveData(data) {
