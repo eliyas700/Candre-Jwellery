@@ -22,7 +22,14 @@ import Message from "./Components/UserWishList/Message";
 import EditProfile from "./Components/UserWishList/EditProfile";
 import ResetPassword from "./Components/UserWishList/ResetPassword";
 import Packages from "./Components/UserWishList/Packages";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
+import axios from "axios";
+
 function App() {
+  const baseURL = "https://api.eazzycard.com/";
+  axios.defaults.baseURL = baseURL;
   return (
     <div className="App">
       <Routes>
@@ -53,6 +60,7 @@ function App() {
       </Routes>
 
       <MainFooter></MainFooter>
+      <ToastContainer />
     </div>
   );
 }

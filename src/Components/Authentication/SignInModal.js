@@ -1,7 +1,12 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import signUpImg from "../../Assets/OnlineJewellery.png";
 import signInImg from "../../Assets/sign_in.webp";
 import whatsapp from "../../Assets/whatsapp_chat.webp";
+import ApiService from "../../Services/api.service";
+import { TokenService } from "../../Services/Storage.service";
 
 const temp = {
   email: "",
@@ -17,27 +22,22 @@ const SignInModal = () => {
     let { name, value } = e.target;
     setValues({ ...values, [name]: value });
   };
-
+  const navigate = useNavigate();
   const onSubmit = async (e) => {
     e.preventDefault();
-
-    const res = await fetch("https://api.eazzycard.com/accounts/login", {
-      method: "POST",
-      body: JSON.stringify(values),
-      headers: {
-        "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      },
-    })
-      .then((res) => res.json())
-      .then((response) => {
-        console.log(response);
-        if (response.status === 200) {
-        }
-      })
-      .catch((error) => {
-        console.log("Invalid Credentials!");
+    try {
+      const res = await axios.post("accounts/login", {
+        ...values,
       });
+      TokenService.saveData(res.data);
+      TokenService.saveToken(res.data.token);
+      ApiService.setHeader();
+      toast.success("Logged in successful");
+      navigate("/cart");
+    } catch (error) {
+      console.log(error.response);
+      toast.error(error.response.data.non_field_errors[0]);
+    }
   };
 
   return (

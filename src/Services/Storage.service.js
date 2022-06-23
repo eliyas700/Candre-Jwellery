@@ -1,5 +1,3 @@
-import { signOut } from "../redux/authSlice";
-import { store } from "../store";
 import ApiService from "./api.service";
 
 const TOKEN_KEY = "token";
@@ -74,7 +72,6 @@ const TokenService = {
     localStorage.removeItem(RELATION_ID);
     localStorage.removeItem(TOKEN_KEY);
     ApiService.removeHeader();
-    store.dispatch(signOut());
   },
 };
 
