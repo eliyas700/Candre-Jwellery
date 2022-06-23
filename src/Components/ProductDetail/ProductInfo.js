@@ -45,7 +45,7 @@ const ProductInfo = ({ product }) => {
               View Product Description
             </div>
             <div class="collapse-content">
-              <p className="text-[13px]">
+              <p className="text-xs lg:text-[13px]">
                 Nothing says perfection and beauty like this dreamy looking and
                 alluring gold and diamond engagement ring. The unusual design
                 and irresistible, gorgeous diamond will surely help you get a
@@ -61,7 +61,7 @@ const ProductInfo = ({ product }) => {
               View Price Breakup
             </div>
             <div class="collapse-content">
-              <p className="text-[13px]">
+              <p className="text-xs lg:text-[13px]">
                 <>
                   <EquationOptions
                     variables={defaultVariables}
@@ -126,10 +126,10 @@ const ProductInfo = ({ product }) => {
           />
         </div>
         <div className="w-[90%] my-7 flex justify-between">
-          <button className="uppercase w-64 btn bg-primary text-neutral hover:text-black">
+          <button className="uppercase w-[50%] btn bg-primary text-neutral hover:text-black">
             Add to Cart
           </button>
-          <button className="w-64 uppercase btn bg-primary text-neutral hover:text-black">
+          <button className="w-[50%] uppercase btn bg-primary text-neutral hover:text-black">
             Add to Wishlist
           </button>
         </div>
@@ -138,7 +138,7 @@ const ProductInfo = ({ product }) => {
             <a className="text-blue-500 underline" href="/">
               Notify Me
             </a>{" "}
-            When thr Price Drop.
+            When the Price Drop.
           </small>
           <p>
             Call us <strong>+1111113434</strong>

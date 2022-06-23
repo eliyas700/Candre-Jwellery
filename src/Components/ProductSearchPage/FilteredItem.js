@@ -5,14 +5,14 @@ const FilteredItem = () => {
   return (
     <div>
       <div className="flex justify-between mt-7">
-        <div className="flex justify-between w-[48%]">
+        <div className="flex justify-between w-[100%] lg:w-[48%]">
           {" "}
           <h1 className="text-xl capitalize font-bold text-info">
             {" "}
             Diamond Rings for women
           </h1>
           <span className="text-info">(827) items</span>
-          <div className="w-36 py-1 bg-[#CEF3D9] text-info px-2 flex justify-between items-center">
+          <div className="w-[120px] lg:w-36 py-1 bg-[#CEF3D9] text-info px-2 flex justify-between items-center">
             <input type="checkbox" name="ship" id="ship" />
             <label htmlFor="ship" className="flex items-center">
               {" "}
@@ -53,11 +53,13 @@ const FilteredItem = () => {
           </div>
         </div>
         <div>
-          <ul className="flex text-info ">
-            <li className="text-lg mr-2 text-[#2fbccc]">Popular | </li>
-            <li className="text-lg mr-2">What's New | </li>
-            <li className="text-lg mr-2">Price Low to High| </li>
-            <li className="text-lg mr-2">Price High to Low</li>
+          <ul className=" text-info hidden lg:flex">
+            <li className="text-sm lg:text-lg mr-2  text-[#2fbccc]">
+              Popular |{" "}
+            </li>
+            <li className="text-sm lg:text-lg mr-2 ">What's New | </li>
+            <li className="text-sm lg:text-lg mr-2 ">Price Low to High| </li>
+            <li className="text-sm lg:text-lg mr-2 ">Price High to Low</li>
           </ul>
         </div>
       </div>

@@ -3,8 +3,8 @@ import "./Header3.css";
 import trending from "../../Assets/Trending.webp";
 const Header3 = () => {
   return (
-    <div className="border-b-2">
-      <ul className=" header3 pb-[20px] mx-16  flex justify-between">
+    <div className="border-b-2 ">
+      <ul className=" header3 pb-[20px] lg:mx-16 grid-cols-3  lg:flex justify-between">
         <li>
           <div class="dropdown dropdown-hover">
             <label tabindex="0" class=" m-1 ">

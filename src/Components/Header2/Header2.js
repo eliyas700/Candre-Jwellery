@@ -10,16 +10,16 @@ const Header2 = () => {
   return (
     <div className="w-[85%] mx-auto">
       <div className="navbar bg-base-100 my-2 ">
-        <div>
+        <div className="">
           {/* <img height={"36px"} width={"188px"} src={logo} alt="" /> */}
-          <Link to="/">
+          <Link className="" to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="250"
               height="71"
               viewBox="0 0 250 71"
               fill="none"
-              class="img-svg replaced-svg"
+              class="img-svg replaced-svg w-[120px] lg:w-[250px]"
             >
               <path
                 class="right-line"
@@ -76,7 +76,7 @@ const Header2 = () => {
             </svg>
           </Link>
         </div>
-        <div className="flex relative ml-28">
+        <div className="flex relative lg:ml-28">
           <input
             className=" w-[40vw] py-3 px-4  focus:border-0  bg-[#F8F8F8] rounded-box"
             type="text"
@@ -103,15 +103,15 @@ const Header2 = () => {
           </Link>
         </div>
         <div className="navbar-end">
-          <Link to="/wishlist" className="mr-5">
-            <img className="w-[20px]" src={heart} alt="" />
+          <Link to="/wishlist" className="lg:mr-5 mr-1">
+            <img className="lg:w-[20px]" src={heart} alt="" />
           </Link>
-          <Link to="/cart" className="mr-5">
-            <img className="w-[20px]" src={cart} alt="" />
+          <Link to="/cart" className="lg:mr-5 mr-1">
+            <img className="lg:w-[20px]" src={cart} alt="" />
           </Link>
-          <div class="dropdown dropdown-hover mr-5">
+          <div class="dropdown dropdown-hover lg:mr-5 mr-1">
             <label tabindex="0" class=" m-1">
-              <img className="w-[20px]" src={user} alt="" />
+              <img className="lg:w-[20px]" src={user} alt="" />
             </label>
             <ul
               tabindex="0"

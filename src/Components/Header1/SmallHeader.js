@@ -31,7 +31,7 @@ const SmallHeader = () => {
           </div>
         </div>
         <div className="w-[50%">
-          <small className="font-bold text-xs text-black">
+          <small className=" hidden lg:block font-bold text-xs text-black">
             EXTRA 5% Instant Discount on Jewellery with Ships Fast tag*
           </small>
         </div>

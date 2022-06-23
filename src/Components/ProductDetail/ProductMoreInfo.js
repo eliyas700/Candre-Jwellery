@@ -10,8 +10,8 @@ const ProductMoreInfo = ({ product }) => {
   const { styleNo } = product;
   return (
     <div className="bg-[#f0f0f0] pt-7 ">
-      <div className=" flex justify-between">
-        <div class="overflow-x-auto p-4 w-[48%]">
+      <div className=" flex flex-wrap justify-between">
+        <div class="overflow-x-auto p-4 w-[100%] lg:w-[48%]">
           <table class="table table-compact w-full">
             <thead>
               <tr>
@@ -121,7 +121,7 @@ const ProductMoreInfo = ({ product }) => {
             </tbody>
           </table>
         </div>
-        <div className="w-[49%] h-fit p-4 bg-white">
+        <div className=" w-[100%] lg:w-[49%] h-fit p-4 bg-white">
           <img src={sample} alt="" />
           <div class="card border-0 rounded-none  bg-primary text-white">
             <div class="card-body items-center text-center">

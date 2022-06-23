@@ -14,7 +14,7 @@ const Footer1 = () => {
             Sign up for our offer Updates:{" "}
           </h2>
         </div>
-        <div className="w-[50%]">
+        <div className=" w-[-50%] lg:w-[50%]">
           <form>
             <input
               className="py-1 mr-2 px-1"
@@ -22,18 +22,18 @@ const Footer1 = () => {
               placeholder="Your email Address"
             />
             <input
-              className="py-1 mr-2 px-1"
+              className="py-1 mr-2 mt-2 px-1"
               type="text"
               placeholder="Your mobile Number"
             />
             <input
               type="submit"
-              className="text-semibold btn bg-[#79769D] btn-sm rounded-none  text-white "
+              className="text-semibold btn mt-2 bg-[#79769D] btn-sm rounded-none  text-white "
               value="Subscribe Now"
             />
           </form>
         </div>
-        <div className="w-[23%]">
+        <div className=" w-[50%]lg:w-[23%]">
           <p className="text-base text-[#79769D]">Follow us on: </p>
           <ul className="flex justify-center mt-1 items-center">
             <li className="mr-3">

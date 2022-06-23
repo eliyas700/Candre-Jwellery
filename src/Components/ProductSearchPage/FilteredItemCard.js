@@ -15,7 +15,7 @@ import { Link, useNavigate } from "react-router-dom";
 const FilteredItemCard = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="grid  mt-3 grid-cols-1 lg:grid-cols-3">
       <div
         onClick={() => navigate("/singleProduct")}
         class="card card-compact w-[273px] h-[378px] shadow-none hover:shadow-xl  bg-base-100 rounded-none "
